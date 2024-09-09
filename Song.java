@@ -1,4 +1,3 @@
-// Nguyen Gia Bao Cao
 // Chapter 2 Assignment : Get you a cat
 
 // "This program tests your understanding of using static methods and println statements. You should write a Java class called Song that should be saved into a file called Song.java. The program should produce as output the following song, which is a shortened version of a classic American folk song named, Bought Me a Cat."
