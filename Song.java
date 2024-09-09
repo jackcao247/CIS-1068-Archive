@@ -14,53 +14,53 @@ public class Song{
 
 	public static void FirstVerse() {
 		Cat();
-        CatSound();
-        Gap();
+        	CatSound();
+        	Gap();
 	}
 	
 	public static void SecondVerse() {
 		Hen();
-        HenSound();
-        CatSound();
-        Gap();
+        	HenSound();
+        	CatSound();
+        	Gap();
 	}
 	
 	public static void ThirdVerse() {
 		Duck();
-        DuckSound();
-        HenSound();
-        CatSound();
-        Gap();
+        	DuckSound();
+        	HenSound();
+        	CatSound();
+        	Gap();
 	}
 	
 	public static void FourthVerse() {
 		Goose();
-        GooseSound();
-        DuckSound();
-        HenSound();
-        CatSound();
-        Gap();
+        	GooseSound();
+        	DuckSound();
+        	HenSound();
+        	CatSound();
+        	Gap();
 	}
 	
 	public static void FifthVerse() {
 		Sheep();
-        SheepSound();
-        GooseSound();
-        DuckSound();
-        HenSound();
-        CatSound();
-        Gap();
+        	SheepSound();
+        	GooseSound();
+        	DuckSound();
+		HenSound();
+        	CatSound();
+        	Gap();
 	}
 	
 	public static void SixthVerse() {
 		Pig();
-        PigSound();
-        SheepSound();
-        GooseSound();
-        DuckSound();
-        HenSound();
-        CatSound();
-        Gap();
+        	PigSound();
+        	SheepSound();
+        	GooseSound();
+		DuckSound();
+        	HenSound();
+        	CatSound();
+        	Gap();
 	}
 
 	
@@ -68,33 +68,33 @@ public class Song{
 	
 // Bought me.. verse	
 	public static void Cat() {
-        System.out.println("Bought me a cat and the cat pleased me,");
-        System.out.println("I fed my cat under yonder tree.");
+        	System.out.println("Bought me a cat and the cat pleased me,");
+        	System.out.println("I fed my cat under yonder tree.");
 	}
 	
 	public static void Hen() {
-        System.out.println("Bought me a hen and the hen pleased me,");
-        System.out.println("I fed my hen under yonder tree.");
+        	System.out.println("Bought me a hen and the hen pleased me,");
+        	System.out.println("I fed my hen under yonder tree.");
 	}
 	
 	public static void Duck() {
-        System.out.println("Bought me a duck and the duck pleased me,");
-        System.out.println("I fed my duck under yonder tree.");
+		System.out.println("Bought me a duck and the duck pleased me,");
+        	System.out.println("I fed my duck under yonder tree.");
 	}
 	
 	public static void Goose() {
-        System.out.println("Bought me a goose and the goose pleased me,");
-        System.out.println("I fed my goose under yonder tree.");
+        	System.out.println("Bought me a goose and the goose pleased me,");
+        	System.out.println("I fed my goose under yonder tree.");
 	}
 	
 	public static void Sheep() {
-	    System.out.println("Bought me a sheep and the sheep pleased me,");
-	    System.out.println("I fed my sheep under yonder tree.");
+		System.out.println("Bought me a sheep and the sheep pleased me,");
+	    	System.out.println("I fed my sheep under yonder tree.");
 	}
 	
 	public static void Pig() {
-        System.out.println("Bought me a pig and the pig pleased me,");
-        System.out.println("I fed my pig under yonder tree.");
+        	System.out.println("Bought me a pig and the pig pleased me,");
+        	System.out.println("I fed my pig under yonder tree.");
 	}
 
 	
@@ -102,7 +102,7 @@ public class Song{
 	
 // Animal sound	
 	public static void CatSound() {
-        System.out.println("Cat goes fiddle-i-fee.");
+        	System.out.println("Cat goes fiddle-i-fee.");
 	}
 	
 	public static void HenSound() {
