@@ -1,4 +1,3 @@
-// Nguyen Gia Bao Cao
 // 08-27-24
 // Assignment 1. Greetings
 
