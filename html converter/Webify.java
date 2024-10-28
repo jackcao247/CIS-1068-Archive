@@ -15,9 +15,10 @@ public class Webify {
         String outputFileName = fileNameWithoutSuffix + ".html";
         
         HTMLConverter(outputFileName, fileName);
-        
-        long endTime = System.currentTimeMillis(); // End time
-        long duration = endTime - startTime; // Duration in milliseconds
+       
+//==========[Just calculating runtime and let us know when it finished]==========\\
+        long endTime = System.currentTimeMillis();
+        long duration = endTime - startTime;
         System.out.println("Finished!");
         System.out.println("Estimated runtime : " + duration + "ms");
     }
@@ -39,7 +40,6 @@ public class Webify {
 
         boolean startList = true;
         boolean lastIsList = false;
-        boolean isP = false;
 
         String h1Start = "#";
         String listStart = "-";
@@ -53,11 +53,7 @@ public class Webify {
             }
 
             if (text.length() == 0) {
-                if (isP) {
-                    outputFile.println("</p>");
-                    isP = false;
-                }
-                // Only print <p> if there is a new paragraph starting
+                outputFile.println("<p>");
             } else {
                 boolean isURL = urlRule(text);
                 if (isURL) {
@@ -68,17 +64,9 @@ public class Webify {
                     outputFile.println(URL + "/S");
                 } else {
                     if (text.startsWith(h1Start) && text.endsWith(h1Start)) {
-                        if (isP) {
-                            outputFile.println("</p>");
-                            isP = false;
-                        }
                         String plainText = text.substring(1, text.length() - 1);
                         outputFile.println("<h1>" + plainText + "</h1>");
                     } else if (text.startsWith(listStart)) {
-                        if (isP) {
-                            outputFile.println("</p>");
-                            isP = false;
-                        }
                         lastIsList = true;
                         if (startList) {
                             outputFile.println("<ul>");
@@ -87,18 +75,10 @@ public class Webify {
                         String listText = text.substring(2);
                         outputFile.println("<li>" + listText + "</li>");
                     } else {
-                        if (!isP) {
-                            outputFile.println("<p>");
-                            isP = true;
-                        }
                         outputFile.println(text + "<br />");
                     }
                 }
             }
-        }
-
-        if (isP) {
-            outputFile.println("</p>");
         }
 
         if (lastIsList) {
