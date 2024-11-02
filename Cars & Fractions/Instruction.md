@@ -41,18 +41,25 @@ Implement at least the following methods:
 
 public Fraction(int n, int d)
 - Constructor that creates a Fraction with numerator and denominator d. If d is 0, throw an ArithmeticException. We haven't yet had a chance to cover exceptions in as much depth as we soon will, but this can be done simply in your method with the statement throw new ArithmeticException();
+
 public int getNum()
 - Returns the value of the numerator field
+
 public int getDenom()
 - Returns the value of the denominator field
+
 public void setNum(int n)
 - Sets the numerator field to the value given in n
+
 public void setDenom(int d)
 - Sets the denominator field to the value given in d. If d is 0, throw an ArithmeticException.
+
 public Fraction add(Fraction a)
 - Returns the fraction that is the sum of the subject of the method and a. For example (new Fraction(3,4)).add(new Fraction(1,4)) is 16/16 i.e 1/1 We sum the fractions a/b and c/d as (a*d+b*c)/b*d then reduce.
+
 public boolean equals(Fraction a)
 - Returns true if subject of method and argument of call are equal. Fractions a/b and c/d are equal if a*d and b*c are equal or since the fractions are normalized, if a==c and b==d.
+
 public String toString()
 - Returns a String representation of the fraction. For example, if the numerator is 1 and the denominator is 2, the String "1/2" is returned.
 
